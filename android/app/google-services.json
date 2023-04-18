@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "736171370245",
+    "firebase_url": "https://todoapp-1e74a-default-rtdb.firebaseio.com",
+    "project_id": "todoapp-1e74a",
+    "storage_bucket": "todoapp-1e74a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736171370245:android:0f3664fe8638d4eeae396c",
+        "android_client_info": {
+          "package_name": "com.example.offbeat_news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736171370245-sk7ji8j1j14ie0di34gg05cai2vaugot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkqWI7y3uIPhyGzhzzsEDM9MDGeWPk8u4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736171370245-sk7ji8j1j14ie0di34gg05cai2vaugot.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "736171370245-t3b04t2kkuh36r19n9efgd0ofgeds9id.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.todoapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736171370245:android:a0fbf50696603573ae396c",
+        "android_client_info": {
+          "package_name": "com.example.todoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736171370245-sk7ji8j1j14ie0di34gg05cai2vaugot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkqWI7y3uIPhyGzhzzsEDM9MDGeWPk8u4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736171370245-sk7ji8j1j14ie0di34gg05cai2vaugot.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "736171370245-t3b04t2kkuh36r19n9efgd0ofgeds9id.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.todoapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

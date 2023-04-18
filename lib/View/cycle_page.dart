@@ -1,8 +1,12 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:get/get.dart';
 
 import 'package:step_progress_indicator/step_progress_indicator.dart';
+
+import 'Auth/auth_page.dart';
 
 class CyclePage extends StatefulWidget {
   const CyclePage({super.key});
@@ -16,22 +20,43 @@ class _CyclePageState extends State<CyclePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        leading: Text(''),
-        title: Center(
-          child: Text(
-            "Your current cycle",
-            style: TextStyle(color: Colors.black54),
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          leading: Text(''),
+          title: Center(
+            child: Text(
+              "Your current cycle",
+              style: TextStyle(color: Colors.black54),
+            ),
           ),
-        ),
-        actions: [
-          Icon(
-            Icons.more_vert,
-            color: Colors.black54,
-          )
-        ],
-      ),
+          actions: [
+            IconButton(
+              onPressed: () {
+                Get.defaultDialog(
+                    title: "Wanna LogOut 👋 ",
+                    titleStyle: TextStyle(color: Colors.red),
+                    backgroundColor: Colors.grey.shade600,
+                    content: Text(
+                      'After logout you can login through registered email and password',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    actions: [
+                      ElevatedButton(
+                          onPressed: () {
+                            Get.back();
+                          },
+                          child: Text('No')),
+                      ElevatedButton(
+                          onPressed: () async {
+                            await FirebaseAuth.instance.signOut();
+                            Get.to(AuthPage());
+                          },
+                          child: Text('Yes')),
+                    ]);
+              },
+              icon: Icon(Icons.more_vert,color: Colors.black,size: 30,),
+            )
+          ]),
       body: Column(
         children: [
           Container(
