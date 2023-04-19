@@ -54,7 +54,11 @@ class _CyclePageState extends State<CyclePage> {
                           child: Text('Yes')),
                     ]);
               },
-              icon: Icon(Icons.more_vert,color: Colors.black,size: 30,),
+              icon: Icon(
+                Icons.more_vert,
+                color: Colors.black,
+                size: 30,
+              ),
             )
           ]),
       body: Column(
@@ -125,11 +129,12 @@ class _CyclePageState extends State<CyclePage> {
                     height: 350,
                     width: 350,
                     child: CircularStepProgressIndicator(
-                      totalSteps: 100,
-                      currentStep: 10,
-                      stepSize: 10,
-                      selectedColor: Colors.red.shade600,
-                      unselectedColor: Colors.transparent,
+                      totalSteps: 4,
+                      stepSize: 25,
+                      customColor: (index) {
+                        return index == 1 ? Colors.blue : Colors.transparent;
+                      },
+                      width: 300,
                       selectedStepSize: 25,
                       roundedCap: (_, __) => true,
                     ),
